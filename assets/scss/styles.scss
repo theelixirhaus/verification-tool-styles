@@ -1,0 +1,188 @@
+// Import PURE CSS FRAMEWORK FOR GRID SYSTEM
+@import url('https://unpkg.com/purecss@1.0.0/build/pure-min.css');
+//IMPORT OPEN SANS FONT FROM GOOGLE
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
+//IMPORT FONT AWESOME CSS VIA CDN
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+//SET GLOBAL VARIABLES
+$primary-color: #50c9f4;
+$secondary-color: #e1ae26;
+$tertiary-color: #f5f5f5;
+$black-color: #58585a;
+$grey-color: #c1c1c1;
+$alert-color: #fc0c0f;
+$success-color: #cccc;
+
+//SET GLOBAL DEFAULTS
+* {
+  letter-spacing: initial;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+//TYPE SETTINGS
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $primary-color;
+  line-height: 1.75em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+p, span, em, strong, b, div {
+  font-size: 1.2rem;
+}
+
+strong {
+  font-weight: 600;
+  color: $black-color;
+}
+
+//Content links
+a {
+  text-decoration: none;
+  color: $primary-color;
+  font-weight: 700;
+
+  &:hover {
+    color: $secondary-color;
+    transition: all 0.15s;
+  }
+}
+
+small {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 400;
+  color: $grey-color;
+}
+
+hr {
+  border: solid thin $tertiary-color;
+  display: inline-block;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+//REUSABLE CLASSES
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.dark {
+  color: $black-color;
+}
+
+.clear {
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  float: none;
+}
+
+//SETS THE MULTI-COLORED BORDER AROUND THE CONTENT AND FRAMES IT IN
+.box-branded {
+  position: relative;
+  padding: 1rem;
+  border: solid thin $primary-color;
+  border-bottom: none;
+  margin: 2rem 0;
+
+  &:after {
+    background: linear-gradient(to right, $grey-color 25%, $primary-color 25%, $primary-color 50%, $black-color 50%, $black-color 75%, $secondary-color 75%);
+    position: absolute;
+    content: '';
+    height: 9px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+//DEFAULT BUTTON STYLES
+.button {
+  background-color: $secondary-color;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 300;
+  padding: 0.7rem 2rem;
+  border-radius: 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.15s;
+  margin: 0 1rem 1rem 0;
+  &:hover {
+    background-color: $black-color;
+    color: white;
+  }
+  &.dark {
+    background-color: $black-color;
+    &:hover {
+      background-color: #373738;
+    }
+  }
+}
+
+.button {
+  .fa {
+    font-size: .8rem;
+    transform: translate(6px, 0px);
+    transition: transform .15s ease-in;
+
+  }
+  &.move-right:hover .fa {
+    transform: translate(12px, 0px);
+  }
+  &.move-down:hover .fa {
+    transform: translate(6px, 2px);
+  }
+}
+
+//LAYOUT STYLES
+.content {
+  max-width: 48rem;
+  margin: 0 auto;
+}
