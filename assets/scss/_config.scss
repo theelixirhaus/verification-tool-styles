@@ -1,0 +1,49 @@
+/*The Width of the site in pixels, percent, or auto*/
+$vcd-site-width:1366px;
+$vcd-site-padding:70px;
+
+/* Responsive sizes*/
+$vcd-mobile-landscape: 501px; /* Min width */
+$vcd-tablet-portrait: 769px; /* Min width */
+$vcd-desktop: 1023px; /* Min width */
+
+/* Paragraph Line Height and Margin */
+$vcd-p-lh: auto;
+$vcd-p-marg:20px;
+
+
+
+/*Colors*/
+$vcd-color-primary: #fff; //White
+$vcd-color-secondary:#fff; //White
+$vcd-color-tertiary:#fff; //White
+$vcd-color-quaternary:#fff; //White
+$vcd-color-quinary:#fff; //White
+$vcd-color-senary:#fff; //White  
+
+$vcd-grey-light:#ccc; //Grey 
+$vcd-grey-norm:#ccc; //Grey 
+$vcd-grey-med:#ccc; //Grey 
+$vcd-grey-dark:#ccc; //Grey 
+
+
+
+$vcd-txt-big:21px;
+$vcd-txt-med:18px;
+$vcd-txt-norm:16px;
+$vcd-txt-sml:14px;
+$vcd-txt-xsml:12px;
+
+
+/* Text Sizes Mobile */
+$vcd-txt-tblt-big:50px;
+$vcd-txt-tblt-med-mob:30px;
+$vcd-txt-tblt-norm-mob:22px;
+$vcd-txt-tblt-sml-mob:20px;
+$vcd-txt-tblt-xsml-mob:20px;
+
+$vcd-txt-mbl-big:18px;
+$vcd-txt-mbl-med:16px;
+$vcd-txt-mbl-norm:16px;
+$vcd-txt-mbl-sml:14px;
+$vcd-txt-mbl-xml:12px;
