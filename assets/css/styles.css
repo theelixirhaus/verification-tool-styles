@@ -9,11 +9,12 @@ body {
   margin: 0;
   font-family: 'Open Sans', "Helvetica Neue", sans-serif;
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #4d4e50; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 100;
+  font-family: 'Open Sans', "Helvetica Neue", sans-serif;
   color: #50c9f4;
   line-height: 1.75em;
   margin: 0; }
@@ -37,7 +38,19 @@ h6 {
   font-size: 1.2rem; }
 
 p, span, em, strong, b, div {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Open Sans', "Helvetica Neue", sans-serif; }
+
+.title {
+  font-size: 30px;
+  font-family: 'Open Sans', "Helvetica Neue", sans-serif; }
+
+.hero-tagline {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: 'Open Sans', "Helvetica Neue", sans-serif; }
 
 strong {
   font-weight: 600;
