@@ -15,6 +15,18 @@
         href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+  <script src="https://unpkg.com/classnames/index.js"></script>
+  <script
+      src="https://unpkg.com/react-input-autosize/dist/react-input-autosize.js"></script>
+  <script src="https://unpkg.com/react-select/dist/react-select.js"></script>
+
+  <link rel="stylesheet"
+        href="https://unpkg.com/react-select/dist/react-select.css">
 </head>
 <body>
 <div class="content">
@@ -123,6 +135,7 @@
         <input type="submit" value="Submit" class="button"/>
       </form>
     </div>
+
     <div class="pure-u-1 ">
       <label>Dropdown States</label>
       <select type="select" name="choices" id="select">
@@ -140,34 +153,171 @@
     </div>
 
   </div>
-  <div class="pure-g box-branded">
-    <div class="col-md-9 col-sm-8">
-      <h2 class="dark">Typography</h2>
-      <p>All icons used on the style guide are provided from <a
-          href="http://fontawesome.io/examples/" target="_blank">FontAwesome.</a>. You can
-        output these icons anywhere by using a base set of code, and changing
-        the icons by making one slight modification.
-      </p>
 
-      <p><i class="fa fa-camera"></i> If you want to output the icon of a
-        camera, you simply use the following HTML:
-      <blockquote>&lt;i class=&quot;fa fa-camera&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-      </blockquote>
-      In this example, you could change the word "camera" (but don't lose the "fa-") to any of the
-      other FontIcon names. You can <a href="http://fontawesome.io/icons/"
-                                       title="Font Aweomse Icons"
-                                       target="_blank">view the full list</a> of
-      FontAwesome icons as well as their corresponding codes.</p>
+  <div class="pure-g box-branded">
+    <h2 class="dark">Accordions</h2>
+    <div class="accordion pure-u-1-1">
+      <div class="accordion-header">
+        <p>SmartAlliance Gold 2500</p>
+      </div>
+      <div class="accordion-content">
+        <p>Opened</p>
+        <p>Opened</p>
+        <p>Opened</p>
+      </div>
     </div>
   </div>
 
 
+  <div class="pure-g box-branded">
+    <h2 class="dark">Tabs</h2>
+    <ul class="tabs pure-u-1-1">
+      <li class="tab active"><a href="#">RATES</a></li>
+      <li class="tab"><a href="#">BENEFITS</a></li>
+      <li class="tab"><a href="#">EXAMPLE</a></li>
+      <li class="tab"><a href="#">TAB</a></li>
+    </ul>
+<div class="tab container">
+  <p>Curabitur mattis interdum posuere. Sed pellentesque dapibus eleifend. Sed tristique quis turpis a pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et quam mattis, consequat orci nec, blandit ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at ipsum eleifend, tempor eros id, accumsan eros. Aliquam vitae congue nisi. Curabitur pretium lectus sed tortor dictum, at hendrerit urna finibus. Duis hendrerit, sapien mollis congue egestas, dolor tortor pulvinar nulla, nec mollis quam nunc in tortor. Vestibulum eget malesuada justo, quis volutpat urna. Nam ac purus risus. Sed malesuada risus sit amet orci elementum imperdiet. Suspendisse id lobortis mauris, vel volutpat tortor. Vestibulum urna sem, vehicula vel massa vel, sodales ullamcorper risus. Aliquam vel orci condimentum, sollicitudin orci sed, pulvinar lectus.</p>
+</div>
+  </div>
+
+  <div class="pure-g box-branded">
+    <h2 class="dark">Dropdowns</h2>
+    <div id="example" class="pure-u-1-1"></div>
+
+  </div>
+
+
+  <div class="pure-g box-branded">
+    <h2 class="dark">Typography</h2>
+    <p>All icons used on the style guide are provided from <a
+        href="http://fontawesome.io/examples/" target="_blank">FontAwesome.</a>.
+      You can
+      output these icons anywhere by using a base set of code, and changing
+      the icons by making one slight modification.
+    </p>
+
+    <p><i class="fa fa-camera"></i> If you want to output the icon of a
+      camera, you simply use the following HTML:
+    <blockquote>&lt;i class=&quot;fa fa-camera&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+    </blockquote>
+    <p>
+      In this example, you could change the word "camera" (but don't lose the
+      "fa-") to any of the
+      other FontIcon names. You can <a href="http://fontawesome.io/icons/"
+                                       title="Font Aweomse Icons"
+                                       target="_blank">view the full list</a> of
+      FontAwesome icons as well as their corresponding codes.</p>
+  </div>
+
+  <div class="pure-g box-branded">
+    <h2 class="dark">Tables</h2>
+    <table class="pure-table" width="100%">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>1</td>
+        <td>Honda</td>
+        <td>Accord</td>
+        <td>2009</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Toyota</td>
+        <td>Camry</td>
+        <td>2012</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Hyundai</td>
+        <td>Elantra</td>
+        <td>2010</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Ford</td>
+        <td>Focus</td>
+        <td>2008</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>Nissan</td>
+        <td>Sentra</td>
+        <td>2011</td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td>BMW</td>
+        <td>M3</td>
+        <td>2009</td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td>Honda</td>
+        <td>Civic</td>
+        <td>2010</td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+        <td>Kia</td>
+        <td>Soul</td>
+        <td>2010</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="pure-g box-branded">
+    <h2 class="dark">Pagination</h2>
+    <ul class="pager">
+      <li class="first"><a href="#">«</a></li>
+      <li class="prev"><a href="#">‹</a></li>
+      <li><a href="#" class="active">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li class="next"><a href="#">›</a></li>
+      <li class="last"><a href="#">»</a></li>
+    </ul>
+    </div>
 </div>
 
 </div>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById('github-stars-button').dataset.style = window.innerWidth > 480 ? 'mega' : null;
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.1/es5-shim.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.1/es5-sham.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/bundle.js"></script>
+<script src="assets/js/app.js"></script>
+<script async defer id="github-bjs"
+        src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
