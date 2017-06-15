@@ -60,8 +60,9 @@ var _componentsStates2 = _interopRequireDefault(_componentsStates);
 _reactDom2['default'].render(_react2['default'].createElement(
 	'div',
 	null,
-	_react2['default'].createElement(_componentsStates2['default'], { label: 'States', searchable: false }),
-	_react2['default'].createElement(_componentsMultiselect2['default'], { label: 'Multiselect' })
+	_react2['default'].createElement(_componentsStates2['default'], { label: 'Simple Dropdown', searchable:false }),
+	_react2['default'].createElement(_componentsStates2['default'], { label: 'Dropdown with Autocomplete' }),
+	_react2['default'].createElement(_componentsMultiselect2['default'], { label: 'React Multiselect Dropdown' })
 	// _react2['default'].createElement(_componentsVirtualized2['default'], { label: 'Virtualized' }),
 	// _react2['default'].createElement(_componentsContributors2['default'], { label: 'Contributors (Async)' }),
 	// _react2['default'].createElement(_componentsGithubUsers2['default'], { label: 'Github users (Async with fetch.js)' }),
@@ -113,8 +114,8 @@ var ValuesAsBooleansField = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark dark section-heading' },
 				this.props.label
 			),
 			_react2['default'].createElement(_reactSelect2['default'], {
@@ -208,8 +209,8 @@ var Contributors = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark dark section-heading' },
 				this.props.label
 			),
 			_react2['default'].createElement(_reactSelect2['default'].Async, { multi: this.state.multi, value: this.state.value, onChange: this.onChange, onValueClick: this.gotoContributor, valueKey: 'github', labelKey: 'name', loadOptions: this.getContributors }),
@@ -305,8 +306,8 @@ var CreatableDemo = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark section-heading' },
 				this.props.label
 			),
 			_react2['default'].createElement(_reactSelect2['default'].Creatable, {
@@ -487,8 +488,8 @@ var UsersField = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark section-heading' },
 				this.props.label
 			),
 			_react2['default'].createElement(_reactSelect2['default'], {
@@ -586,8 +587,8 @@ var DisabledUpsellOptions = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark section-heading' },
 				this.props.label
 			),
 			_react2['default'].createElement(_reactSelect2['default'], {
@@ -694,8 +695,8 @@ var GithubUsers = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark section-heading' },
 				this.props.label
 			),
 			_react2['default'].createElement(AsyncComponent, { multi: this.state.multi, value: this.state.value, onChange: this.onChange, onValueClick: this.gotoUser, valueKey: 'id', labelKey: 'login', loadOptions: this.getUsers, backspaceRemoves: this.state.backspaceRemoves }),
@@ -815,8 +816,8 @@ var MultiSelectField = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark section-heading' },
 				this.props.label
 			),
 			_react2['default'].createElement(_reactSelect2['default'], { multi: true, simpleValue: true, disabled: this.state.disabled, value: this.state.value, placeholder: 'Select your favourite(s)', options: this.state.options, onChange: this.handleSelectChange }),
@@ -826,20 +827,20 @@ var MultiSelectField = (0, _createReactClass2['default'])({
 				_react2['default'].createElement(
 					'label',
 					{ className: 'checkbox' },
-					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control', checked: this.state.disabled, onChange: this.toggleDisabled }),
+					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control hidden', checked: this.state.disabled, onChange: this.toggleDisabled }),
 					_react2['default'].createElement(
 						'span',
-						{ className: 'checkbox-label' },
+						{ className: 'checkbox-label hidden' },
 						'Disable the control'
 					)
 				),
 				_react2['default'].createElement(
 					'label',
 					{ className: 'checkbox' },
-					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control', checked: this.state.crazy, onChange: this.toggleChocolate }),
+					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control hidden', checked: this.state.crazy, onChange: this.toggleChocolate }),
 					_react2['default'].createElement(
 						'span',
-						{ className: 'checkbox-label' },
+						{ className: 'checkbox-label hidden' },
 						'I don\'t like Chocolate (disabled the option)'
 					)
 				)
@@ -922,8 +923,8 @@ var ValuesAsNumbersField = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark section-heading' },
 				this.props.label
 			),
 			_react2['default'].createElement(_reactSelect2['default'], {
@@ -1062,8 +1063,8 @@ var StatesField = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark section-heading' },
 				this.props.label
 			),
 			_react2['default'].createElement(_reactSelect2['default'], { ref: 'stateSelect', autofocus: true, options: options, simpleValue: true, clearable: this.state.clearable, name: 'selected-state', disabled: this.state.disabled, value: this.state.selectValue, onChange: this.updateValue, searchable: this.state.searchable }),
@@ -1072,36 +1073,36 @@ var StatesField = (0, _createReactClass2['default'])({
 				{ style: { marginTop: 14 } },
 				_react2['default'].createElement(
 					'button',
-					{ type: 'button', onClick: this.focusStateSelect },
+					{ type: 'button', className: 'hidden', onClick: this.focusStateSelect },
 					'Focus Select'
 				),
 				_react2['default'].createElement(
 					'label',
 					{ className: 'checkbox', style: { marginLeft: 10 } },
-					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control', name: 'searchable', checked: this.state.searchable, onChange: this.toggleCheckbox }),
+					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control hidden', name: 'searchable', checked: this.state.searchable, onChange: this.toggleCheckbox }),
 					_react2['default'].createElement(
 						'span',
-						{ className: 'checkbox-label' },
+						{ className: 'checkbox-label hidden' },
 						'Searchable'
 					)
 				),
 				_react2['default'].createElement(
 					'label',
 					{ className: 'checkbox', style: { marginLeft: 10 } },
-					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control', name: 'disabled', checked: this.state.disabled, onChange: this.toggleCheckbox }),
+					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control hidden', name: 'disabled', checked: this.state.disabled, onChange: this.toggleCheckbox }),
 					_react2['default'].createElement(
 						'span',
-						{ className: 'checkbox-label' },
+						{ className: 'checkbox-label hidden' },
 						'Disabled'
 					)
 				),
 				_react2['default'].createElement(
 					'label',
 					{ className: 'checkbox', style: { marginLeft: 10 } },
-					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control', name: 'clearable', checked: this.state.clearable, onChange: this.toggleCheckbox }),
+					_react2['default'].createElement('input', { type: 'checkbox', className: 'checkbox-control hidden', name: 'clearable', checked: this.state.clearable, onChange: this.toggleCheckbox }),
 					_react2['default'].createElement(
 						'span',
-						{ className: 'checkbox-label' },
+						{ className: 'checkbox-label hidden' },
 						'Clearable'
 					)
 				)
@@ -1112,20 +1113,20 @@ var StatesField = (0, _createReactClass2['default'])({
 				_react2['default'].createElement(
 					'label',
 					{ className: 'checkbox' },
-					_react2['default'].createElement('input', { type: 'radio', className: 'checkbox-control', checked: this.state.country === 'AU', value: 'AU', onChange: this.switchCountry }),
+					_react2['default'].createElement('input', { type: 'radio', className: 'checkbox-control hidden', checked: this.state.country === 'AU', value: 'AU', onChange: this.switchCountry }),
 					_react2['default'].createElement(
 						'span',
-						{ className: 'checkbox-label' },
+						{ className: 'checkbox-label hidden' },
 						'Australia'
 					)
 				),
 				_react2['default'].createElement(
 					'label',
 					{ className: 'checkbox' },
-					_react2['default'].createElement('input', { type: 'radio', className: 'checkbox-control', checked: this.state.country === 'US', value: 'US', onChange: this.switchCountry }),
+					_react2['default'].createElement('input', { type: 'radio', className: 'checkbox-control hidden', checked: this.state.country === 'US', value: 'US', onChange: this.switchCountry }),
 					_react2['default'].createElement(
 						'span',
-						{ className: 'checkbox-label' },
+						{ className: 'checkbox-label hidden' },
 						'United States'
 					)
 				)
@@ -1171,8 +1172,8 @@ var CitiesField = (0, _createReactClass2['default'])({
 			'div',
 			{ className: 'section' },
 			_react2['default'].createElement(
-				'h3',
-				{ className: 'section-heading' },
+				'h5',
+				{ className: 'dark section-heading' },
 				'Cities (Large Dataset)'
 			),
 			_react2['default'].createElement(_reactVirtualizedSelect2['default'], { ref: 'citySelect',

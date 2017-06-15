@@ -465,7 +465,7 @@ ul.pager {
   width: 100%;
   margin: 1rem 0;
   padding: 0;
-  text-align:center;
+  text-align: center;
   li {
     display: inline;
 
@@ -476,21 +476,60 @@ ul.pager {
       text-align: center;
       &:hover, &.active {
         background-color: $primary-color;
-        color:white;
+        color: white;
       }
     }
 
     &.first, &.prev, &.next, &.last {
-      float:right;
+      float: right;
       a {
         padding: .2rem 1rem;
-        font-weight:400;
+        font-weight: 400;
       }
     }
 
     &.first, &.prev {
-      float:left;
+      float: left;
     }
   }
 
 }
+
+//React Select Dropdowns
+.Select-control {
+  border-radius: 0;
+}
+
+.is-searchable, .Select--multi {
+  .Select-control {
+    height: 2.25rem;
+    background-color: $black-color !important;
+    border: none;
+  }
+  .Select-value-label {
+    color: white !important;
+  }
+  .Select-arrow:before {
+    color: white;
+
+  }
+}
+
+.Select-option {
+  &.is-focused, &.is-selected {
+    background-color: #e0e0e0;
+  }
+}
+
+.Select-arrow {
+  border: none;
+  position: relative;
+  &:before {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 1.2rem;
+    color: $grey-color;
+    margin:1px 4px 0 0;
+  }
+}
+

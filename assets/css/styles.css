@@ -340,4 +340,29 @@ ul.pager {
     ul.pager li.first, ul.pager li.prev {
       float: left; }
 
+.Select-control {
+  border-radius: 0; }
+
+.is-searchable .Select-control, .Select--multi .Select-control {
+  height: 2.25rem;
+  background-color: #4d4e50 !important;
+  border: none; }
+.is-searchable .Select-value-label, .Select--multi .Select-value-label {
+  color: white !important; }
+.is-searchable .Select-arrow:before, .Select--multi .Select-arrow:before {
+  color: white; }
+
+.Select-option.is-focused, .Select-option.is-selected {
+  background-color: #e0e0e0; }
+
+.Select-arrow {
+  border: none;
+  position: relative; }
+  .Select-arrow:before {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 1.2rem;
+    color: #e4e6e6;
+    margin: 1px 4px 0 0; }
+
 /*# sourceMappingURL=styles.css.map */
