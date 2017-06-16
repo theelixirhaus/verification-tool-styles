@@ -7,51 +7,141 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <link rel="stylesheet"
+        href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+  <link rel="stylesheet"
+        href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+  <link rel="stylesheet"
+        href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/react-select/dist/react-select.css">
+  <link rel="stylesheet"
+        href="https://unpkg.com/react-select/dist/react-select.css">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
   <script src="https://unpkg.com/classnames/index.js"></script>
-  <script src="https://unpkg.com/react-input-autosize/dist/react-input-autosize.js"></script>
+  <script
+      src="https://unpkg.com/react-input-autosize/dist/react-input-autosize.js"></script>
   <script src="https://unpkg.com/react-select/dist/react-select.js"></script>
 </head>
 <body>
 <div class="content">
-  <a href="#"><img width="250" src="img/vericred-logo.svg"/></a>
-  <!-- Begin the branded box with the mutli-color border -->
-  <div class="pure-g box-branded">
-    <div class="purge-u-1">
-      <!-- TYPOGRAPHY -->
-      <h1>Headline One</h1>
-      <h2>Headline Two</h2>
-      <h3>Headline Three</h3>
-      <h4>Headline Four</h4>
-      <h5>Headline Five</h5>
-      <h6>Headline Six</h6>
-      <p class="title">Title</p>
-      <p class="hero-tagline">Morbi tincidunt, odio varius vestibulum congue</p>
-      <p>Proin sodales augue eu ullamcorper feugiat. Morbi tempus tellus non
-        imperdiet laoreet. <strong>Vestibulum et porttitor sem</strong>, quis
-        imperdiet nisl.
-        Phasellus ultricies orci ac purus mattis lacinia. Vestibulum eleifend
-        imperdiet lacus, vel sollicitudin purus sollicitudin vitae. Aenean enim
-        tellus, elementum eu cursus a, iaculis vitae urna.
-        Morbi tincidunt, odio varius vestibulum congue, lectus nulla euismod
-        libero, quis accumsan orci massa nec tortor. Suspendisse bibendum quis
-        erat sed pulvinar.</p>
+  <!--<h1 class="text-center">Vericred Style Guide</h1>-->
+  <h2 class="dark hbr">Logo</h2>
+  <div class="logos"><p>
+    <a href="#"><img src="img/vericred-logo.png"/></a>
+    <a href="#"><img src="img/vericred-logo-blue.png"/></a></p><br></div>
 
-      <p>Mauris posuere ac lectus at condimentum. Praesent finibus, risus ac
-        pharetra hendrerit, risus diam molestie nisi, sagittis iaculis neque
-        mauris vitae erat. <a href="#">Duis venenatis mi sed</a></p>
+  <!-- Begin the branded box with the mutli-color border -->
+  <h2 class="dark hbr">Color Palette</h2>
+  <div class="palette pure-g">
+    <div class="pure-u-1-5">
+      <span class="panel tertiary">LIGHT TURQUOISE</span>
+      <p>#a4dcf3</p>
+    </div>
+    <div class="pure-u-1-5">
+      <span class="panel primary">DARK TURQUOISE</span>
+      <p>#38a4d0</p>
+    </div>
+    <div class="pure-u-1-5">
+      <span class="panel gray">DARK<br>GRAY</span>
+      <p>#4d4e50</p>
+    </div>
+    <div class="pure-u-1-5">
+      <span class="panel light-gray">LIGHT<br>GRAY</span>
+      <p>#e4e6e6</p>
+    </div>
+    <div class="pure-u-1-5">
+      <span class="panel secondary"><br>GOLD</span>
+      <p>#e1ae26</p>
     </div>
   </div>
-  <!-- BUTTONS -->
-  <div class="pure-g box-branded">
-    <h2 class="dark purge-u-1 clear">Buttons</h2>
+  <h2 class="dark hbr">Typography</h2>
+
+  <div class="purge-u-1">
+    <!-- TYPOGRAPHY -->
+    <h1>Headline One</h1>
+    <h2>Headline Two</h2>
+    <h3>Headline Three</h3>
+    <h4>Headline Four</h4>
+    <h5>Headline Five</h5>
+    <h6>Headline Six</h6>
+    <p class="title">Title</p>
+    <p class="hero-tagline">Morbi tincidunt, odio varius vestibulum congue</p>
+    <p>Proin sodales augue eu ullamcorper feugiat. Morbi tempus tellus non
+      imperdiet laoreet. <strong>Vestibulum et porttitor sem</strong>, quis
+      imperdiet nisl.
+      Phasellus ultricies orci ac purus mattis lacinia. Vestibulum eleifend
+      imperdiet lacus, vel sollicitudin purus sollicitudin vitae. Aenean enim
+      tellus, elementum eu cursus a, iaculis vitae urna.
+      Morbi tincidunt, odio varius vestibulum congue, lectus nulla euismod
+      libero, quis accumsan orci massa nec tortor. Suspendisse bibendum quis
+      erat sed pulvinar.</p>
+
+    <p>Mauris posuere ac lectus at condimentum. Praesent finibus, risus ac
+      pharetra hendrerit, risus diam molestie nisi, sagittis iaculis neque
+      mauris vitae erat. <a href="#">Duis venenatis mi sed</a></p>
+  </div>
+
+
+  <!-- Form Components-->
+  <h2 class="dark  hbr">Input Elements</h2>
+  <h6 class="primary">CHECKBOXES</h6>
+  <div class="pure-u-1"><br>
+    <input type="checkbox" value="Checkbox" checked id="checkbox"> <label
+        for="checkbox">Checkboxes</label>
+    </input>
+  </div>
+  <div class="pure-u-1 "><br><br>
+    <h6 class="primary">RADIO BUTTONS</h6>
+    <br>
+    <input type="radio" value="Radio Button" checked id="radio" name="radio">
+    <label for="radio">Choose me &nbsp;</label>
+    </input>
+    <input type="radio" value="Radio Button 2" id="radio-2" name="radio">
+    <label for="radio-2">Or choose me!</label>
+    </input>
+  </div>
+  <div class="pure-u-md-3-5"><br>
+    <h6 class="primary">TEXT INPUT</h6>
+    <br>
+    <form>
+
+      <input type="text" placeholder="Text Input" required
+             class="required pure-u-13-24"
+             id="text-input"/>
+      <input type="submit" value="Submit" class="button"/>
+    </form>
+  </div>
+  <div class=" pure-u-3-5">
+    <label for="search-input">SEARCH FORM</label>
+    <input type="search" placeholder="&#xf4a5;" required
+           class="required pure-u-13-24"
+           id="search-input"/>
+    <input type="submit" value="Submit" class="button primary"/></div>
+
+
+  <div class="pure-u-3-5 ">
+    <form>
+      <label for="validation-input" class="required">Form Validation<span
+          class="error">* Please enter a valid thing.</span> </label>
+
+      <input type="text" placeholder="Text Input" required
+             class="validate required pure-u-13-24"
+             id="validation-input"/>
+      <input type="submit" value="Submit" class="button"/>
+    </form>
+  </div>
+
+<br>
+  <h6 class="primary">DROPDOWNS</h6>
+  <br>
+
+  <div id="example" class="pure-u-1-2"></div>
+  <br><br>  <!-- BUTTONS -->  <h6 class="primary">Buttons</h6>
+  <div class="pure-g">
     <div class="pure-u-md-1-3">
       <small>Regular Button</small>
       <p><a class="button" href="#">Speak to an Expert</a></p>
@@ -59,12 +149,12 @@
     <div class="pure-u-1 pure-u-md-1-3">
       <small>Icon Button</small>
       <p><a class="button move-right" href="#">Report a Problem <i
-          class="fa fa-chevron-right"></i></a></p>
+          class="ion-ios-arrow-right"></i></a></p>
     </div>
     <div class="pure-u-1 pure-u-md-1-3">
       <small>Icon Button</small>
       <p><a class="button move-down" href="#">Report a Problem <i
-          class="fa fa-chevron-down"></i></a></p><br>
+          class="ion-ios-arrow-down"></i></a></p><br>
     </div>
     <div class=" pure-u-1 pure-u-md-1-3">
       <small>Regular Button</small>
@@ -73,211 +163,151 @@
     <div class="pure-u-1 pure-u-md-1-3">
       <small>Icon Button</small>
       <p><a class="button dark move-right" href="#">Report a Problem <i
-          class="fa fa-chevron-right"></i></a></p>
+          class="ion-ios-arrow-right"></i></a></p>
     </div>
     <div class="pure-u-1 pure-u-md-1-3">
       <small>Icon Button</small>
       <p><a class="button dark move-down" href="#">Report a Problem <i
-          class="fa fa-chevron-down"></i></a></p><br>
+          class="ion-ios-arrow-down"></i></a></p><br>
+    </div></div>
+
+  <div class="accordion  hbr">
+    <h2 class="dark hbr">Widgets</h2>
+    <br><h6 class="primary">ACCORDION</h6><br>
+    <div class="accordion-header">
+      <p>SmartAlliance Gold 2500</p>
+    </div>
+    <div class="accordion-content">
+      <p>Opened</p>
+      <p>Opened</p>
+      <p>Opened</p>
     </div>
   </div>
-
-  <!-- Form Components-->
-  <div class="pure-g box-branded">
-    <h2 class="dark purge-u-1 clear">Form Components</h2>
-    <div class="pure-u-1"><br>
-      <input type="checkbox" value="Checkbox" checked id="checkbox"> <label
-          for="checkbox">Checkboxes</label>
-      </input>
-    </div>
-    <div class="pure-u-1 "><br><br>
-      <input type="radio" value="Radio Button" checked id="radio" name="radio">
-      <label for="radio">Choose me &nbsp;</label>
-      </input>
-      <input type="radio" value="Radio Button 2" id="radio-2" name="radio">
-      <label for="radio-2">Or choose me!</label>
-      </input>
-    </div>
-    <div class="pure-u-md-3-5"><br>
-      <form>
-        <label for="text-input" class="required">Text Input</label>
-        <input type="text" placeholder="Text Input" required
-               class="required pure-u-13-24"
-               id="text-input"/>
-        <input type="submit" value="Submit" class="button"/>
-      </form>
-    </div>
-    <div class=" pure-u-3-5">
-      <label for="search-input">SEARCH FORM</label>
-      <input type="search" placeholder="&#xF002;" required
-             class="required pure-u-13-24"
-             id="search-input"/>
-      <input type="submit" value="Submit" class="button primary"/></div>
-
-
-    <div class="pure-u-3-5 ">
-      <form>
-        <label for="validation-input" class="required">Form Validation<span
-            class="error">* Please enter a valid thing.</span> </label>
-
-        <input type="text" placeholder="Text Input" required
-               class="validate required pure-u-13-24"
-               id="validation-input"/>
-        <input type="submit" value="Submit" class="button"/>
-      </form>
-    </div>
-
-
-  </div>
-    <div class="pure-g box-branded">
-      <h2 class="dark pure-u-1-1">Dropdowns</h2>
-      <div id="example" class="pure-u-2-3" ></div>
-
-    </div>
-
-
-  <div class="pure-g box-branded">
-    <h2 class="dark">Accordions</h2>
-    <div class="accordion pure-u-1-1">
-      <div class="accordion-header">
-        <p>SmartAlliance Gold 2500</p>
-      </div>
-      <div class="accordion-content">
-        <p>Opened</p>
-        <p>Opened</p>
-        <p>Opened</p>
-      </div>
-    </div>
+  <br><h6 class="primary">TABS</h6><br>
+  <ul class="tabs pure-u-1-1">
+    <li class="tab active"><a href="#">RATES</a></li>
+    <li class="tab"><a href="#">BENEFITS</a></li>
+    <li class="tab"><a href="#">EXAMPLE</a></li>
+    <li class="tab"><a href="#">TAB</a></li>
+  </ul>
+  <div class="tab container">
+    <p>Curabitur mattis interdum posuere. Sed pellentesque dapibus eleifend.
+      Sed tristique quis turpis a pharetra. Vestibulum ante ipsum primis in
+      faucibus orci luctus et ultrices posuere cubilia Curae; Donec et quam
+      mattis, consequat orci nec, blandit ligula. Vestibulum ante ipsum primis
+      in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at
+      ipsum eleifend, tempor eros id, accumsan eros. Aliquam vitae congue
+      nisi. Curabitur pretium lectus sed tortor dictum, at hendrerit urna
+      finibus. Duis hendrerit, sapien mollis congue egestas, dolor tortor
+      pulvinar nulla, nec mollis quam nunc in tortor. Vestibulum eget
+      malesuada justo, quis volutpat urna. Nam ac purus risus. Sed malesuada
+      risus sit amet orci elementum imperdiet. Suspendisse id lobortis mauris,
+      vel volutpat tortor. Vestibulum urna sem, vehicula vel massa vel,
+      sodales ullamcorper risus. Aliquam vel orci condimentum, sollicitudin
+      orci sed, pulvinar lectus.</p>
   </div>
 
 
-  <div class="pure-g box-branded">
-    <h2 class="dark">Tabs</h2>
-    <ul class="tabs pure-u-1-1">
-      <li class="tab active"><a href="#">RATES</a></li>
-      <li class="tab"><a href="#">BENEFITS</a></li>
-      <li class="tab"><a href="#">EXAMPLE</a></li>
-      <li class="tab"><a href="#">TAB</a></li>
-    </ul>
-<div class="tab container">
-  <p>Curabitur mattis interdum posuere. Sed pellentesque dapibus eleifend. Sed tristique quis turpis a pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et quam mattis, consequat orci nec, blandit ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at ipsum eleifend, tempor eros id, accumsan eros. Aliquam vitae congue nisi. Curabitur pretium lectus sed tortor dictum, at hendrerit urna finibus. Duis hendrerit, sapien mollis congue egestas, dolor tortor pulvinar nulla, nec mollis quam nunc in tortor. Vestibulum eget malesuada justo, quis volutpat urna. Nam ac purus risus. Sed malesuada risus sit amet orci elementum imperdiet. Suspendisse id lobortis mauris, vel volutpat tortor. Vestibulum urna sem, vehicula vel massa vel, sodales ullamcorper risus. Aliquam vel orci condimentum, sollicitudin orci sed, pulvinar lectus.</p>
-</div>
-  </div>
+  <h2 class="dark hbr">Iconography</h2>
+  <p>All icons used on the style guide are provided from <a
+      href="http://ionicons.com" target="_blank">Ionicons.</a>.
+    You can
+    output these icons anywhere by using a base set of code, and changing
+    the icons by making one slight modification.
+  </p>
 
+  <p><i class="ion-ios-camera"></i> If you want to output the icon of a
+    camera, you simply use the followieng HTML:
+  <blockquote>&lt;i class=&quot;ion-ios-camera&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+  </blockquote>
+  <p>
+ You can <a href="http://ionicons.com/"
+                                     title="http://ionicons.com/"
+                                     target="_blank">view the full list</a> of
+    Ionicons icons as well as their corresponding codes.</p>
+  <h2 class="dark hbr">Tables</h2>
+  <table class="pure-table" width="100%">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Year</th>
+    </tr>
+    </thead>
 
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Honda</td>
+      <td>Accord</td>
+      <td>2009</td>
+    </tr>
 
+    <tr>
+      <td>2</td>
+      <td>Toyota</td>
+      <td>Camry</td>
+      <td>2012</td>
+    </tr>
 
-  <div class="pure-g box-branded">
-    <h2 class="dark">Typography</h2>
-    <p>All icons used on the style guide are provided from <a
-        href="http://fontawesome.io/examples/" target="_blank">FontAwesome.</a>.
-      You can
-      output these icons anywhere by using a base set of code, and changing
-      the icons by making one slight modification.
-    </p>
+    <tr>
+      <td>3</td>
+      <td>Hyundai</td>
+      <td>Elantra</td>
+      <td>2010</td>
+    </tr>
 
-    <p><i class="fa fa-camera"></i> If you want to output the icon of a
-      camera, you simply use the following HTML:
-    <blockquote>&lt;i class=&quot;fa fa-camera&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-    </blockquote>
-    <p>
-      In this example, you could change the word "camera" (but don't lose the
-      "fa-") to any of the
-      other FontIcon names. You can <a href="http://fontawesome.io/icons/"
-                                       title="Font Aweomse Icons"
-                                       target="_blank">view the full list</a> of
-      FontAwesome icons as well as their corresponding codes.</p>
-  </div>
+    <tr>
+      <td>4</td>
+      <td>Ford</td>
+      <td>Focus</td>
+      <td>2008</td>
+    </tr>
 
-  <div class="pure-g box-branded">
-    <h2 class="dark">Tables</h2>
-    <table class="pure-table" width="100%">
-      <thead>
-      <tr>
-        <th>#</th>
-        <th>Make</th>
-        <th>Model</th>
-        <th>Year</th>
-      </tr>
-      </thead>
+    <tr>
+      <td>5</td>
+      <td>Nissan</td>
+      <td>Sentra</td>
+      <td>2011</td>
+    </tr>
 
-      <tbody>
-      <tr>
-        <td>1</td>
-        <td>Honda</td>
-        <td>Accord</td>
-        <td>2009</td>
-      </tr>
+    <tr>
+      <td>6</td>
+      <td>BMW</td>
+      <td>M3</td>
+      <td>2009</td>
+    </tr>
 
-      <tr>
-        <td>2</td>
-        <td>Toyota</td>
-        <td>Camry</td>
-        <td>2012</td>
-      </tr>
+    <tr>
+      <td>7</td>
+      <td>Honda</td>
+      <td>Civic</td>
+      <td>2010</td>
+    </tr>
 
-      <tr>
-        <td>3</td>
-        <td>Hyundai</td>
-        <td>Elantra</td>
-        <td>2010</td>
-      </tr>
-
-      <tr>
-        <td>4</td>
-        <td>Ford</td>
-        <td>Focus</td>
-        <td>2008</td>
-      </tr>
-
-      <tr>
-        <td>5</td>
-        <td>Nissan</td>
-        <td>Sentra</td>
-        <td>2011</td>
-      </tr>
-
-      <tr>
-        <td>6</td>
-        <td>BMW</td>
-        <td>M3</td>
-        <td>2009</td>
-      </tr>
-
-      <tr>
-        <td>7</td>
-        <td>Honda</td>
-        <td>Civic</td>
-        <td>2010</td>
-      </tr>
-
-      <tr>
-        <td>8</td>
-        <td>Kia</td>
-        <td>Soul</td>
-        <td>2010</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-
-
-  <div class="pure-g box-branded">
-    <h2 class="dark">Pagination</h2>
-    <ul class="pager">
-      <li class="first"><a href="#">«</a></li>
-      <li class="prev"><a href="#">‹</a></li>
-      <li><a href="#" class="active">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">6</a></li>
-      <li><a href="#">7</a></li>
-      <li class="next"><a href="#">›</a></li>
-      <li class="last"><a href="#">»</a></li>
-    </ul>
-    </div>
+    <tr>
+      <td>8</td>
+      <td>Kia</td>
+      <td>Soul</td>
+      <td>2010</td>
+    </tr>
+    </tbody>
+  </table>
+  <h2 class="dark hbr">Pagination</h2>
+  <ul class="pager">
+    <li class="first"><a href="#">«</a></li>
+    <li class="prev"><a href="#">‹</a></li>
+    <li><a href="#" class="active">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li class="next"><a href="#">›</a></li>
+    <li class="last"><a href="#">»</a></li>
+  </ul>
 </div>
 
 </div>

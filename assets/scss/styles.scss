@@ -1,10 +1,10 @@
 //IMPORT OPEN SANS FONT FROM GOOGLE
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
 //IMPORT FONT AWESOME CSS VIA CDN
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 
 //SET GLOBAL VARIABLES
-$primary-color: #38a4d0;
+$primary-color: #00aeef;
 $secondary-color: #e1ae26;
 $tertiary-color: #a4dcf3;
 $black-color: #4d4e50;
@@ -38,6 +38,9 @@ body, div {
   font-size: 16px;
   font-weight: 300;
   color: $vericred-grey;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body *:not(.fa) {
@@ -58,11 +61,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.875rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 h4 {
@@ -76,7 +79,11 @@ h5 {
 h6 {
   font-size: 1.2rem;
 }
-
+.hbr {
+  border-bottom:solid thin #c2c2c2;
+  width:100%;
+  margin:2rem 0;
+}
 p, span, em, strong, b, div {
   font-size: 1.2rem;
   font-weight: 300;
@@ -130,6 +137,7 @@ hr {
 }
 
 //REUSABLE CLASSES
+
 .left {
   float: left;
 }
@@ -146,10 +154,19 @@ hr {
   font-weight: 300;
 }
 
+.primary {
+  color:$primary-color;
+}
+.secondary {
+  color:$secondary-color;
+}
+
 .dark {
   color: $black-color;
 }
-
+.text-center {
+  text-align:center;
+}
 .clear {
   clear: both;
   display: inline-block;
@@ -161,21 +178,27 @@ hr {
 .box-branded {
   position: relative;
   padding: 1rem 1rem 2rem;
-  border: solid thin $primary-color;
-  border-bottom: none;
-  margin: 2rem 0;
+  //border: solid thin $primary-color;
+  //border-bottom: none;
+  //margin: 2rem 0;
 
   &:after {
-    background: linear-gradient(to right, $grey-color 25%, $primary-color 25%, $primary-color 50%, $black-color 50%, $black-color 75%, $secondary-color 75%);
-    position: absolute;
-    content: '';
-    height: 9px;
-    right: 0;
-    left: 0;
-    width: 100%;
-    bottom: 0;
+    //background: linear-gradient(to right, $grey-color 25%, $primary-color 25%, $primary-color 50%, $black-color 50%, $black-color 75%, $secondary-color 75%);
+    //position: absolute;
+    //content: '';
+    //height: 9px;
+    //right: 0;
+    //left: 0;
+    //width: 100%;
+    //bottom: 0;
   }
 }
+//Logos
+.logos img {
+  vertical-align: middle;
+  margin: 0 3rem 0 0;
+}
+
 
 //DEFAULT BUTTON STYLES
 .button {
@@ -201,16 +224,16 @@ hr {
 }
 
 .button {
-  .fa {
+  i:before {
     font-size: .8rem;
     transform: translate(6px, 0px);
     transition: transform .15s ease-in;
 
   }
-  &.move-right:hover .fa {
+  &.move-right:hover i:before {
     transform: translate(12px, 0px);
   }
-  &.move-down:hover .fa {
+  &.move-down:hover i:before {
     transform: translate(6px, 2px);
   }
 }
@@ -259,7 +282,6 @@ input[type=tel] {
   padding: 0 .75rem;
   border-radius: 6px;
   border: solid thin $grey-color;
-  font-size: .9rem;
 
   &:focus {
     outline: solid thin rgba(0, 0, 0, .2);
@@ -273,7 +295,7 @@ input[type=tel] {
 }
 
 input[type="search"]::placeholder {
-  font-family: FontAwesome;
+  font-family: Ionicons;
   font-size: 1.2rem;
   text-indent: 2px;
   line-height: 1.2rem;
@@ -312,6 +334,41 @@ input[type=radio]:checked {
   background-color: $primary-color;
 }
 
+//Color Palette
+.palette {
+margin:0 -.5rem;
+> div p {
+  margin:.5rem 0;
+  font-size:.8rem;
+  padding-left:.5rem;
+}
+  .panel {
+    background-color:$primary-color;
+    border:solid 8px white;
+    display:block;
+    padding:5rem 1rem 1rem;
+    line-height:1.4rem;
+    color:white;
+
+    &.secondary {
+      background-color:$secondary-color;
+    }
+
+    &.tertiary{
+      background-color:$tertiary-color;
+    }
+
+    &.gray {
+      background-color:$black-color;
+    }
+
+    &.light-gray{
+      background-color:$grey-color;
+    }
+
+  }
+
+}
 //Checkboxes
 input[type=checkbox] {
 
@@ -321,11 +378,11 @@ input[type=checkbox] {
   background-color: $grey-color;
   position: relative;
   &:before {
-    content: "\f00c";
-    font-family: FontAwesome;
+    content: "\f122";
+    font-family: Ionicons;
     position: absolute;
-    bottom: -1px;
-    left: 0;
+    bottom: -4px;
+    left: 2px;
     font-size: 1.8rem;
     color: $grey-color;
 
@@ -378,8 +435,8 @@ input[type="submit"] {
     background-color: #f5f5f5;
     position: relative;
     &:before {
-      content: "\f105";
-      font-family: FontAwesome;
+      content: "\f3d3";
+      font-family: Ionicons;
       font-size: 2rem;
       position: absolute;
       top: 1.25rem;
@@ -400,7 +457,7 @@ input[type="submit"] {
   &.open .accordion-header {
     *, &:before {
       color: $primary-color;
-      content: "\f107";
+      content: "\f3d0";
 
     }
   }
@@ -525,8 +582,8 @@ ul.pager {
   border: none;
   position: relative;
   &:before {
-    content: "\f107";
-    font-family: FontAwesome;
+    content: "\f3d0";
+    font-family: Ionicons;
     font-size: 1.2rem;
     color: $grey-color;
     margin:1px 4px 0 0;
