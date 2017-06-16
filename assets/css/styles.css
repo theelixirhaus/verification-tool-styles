@@ -250,7 +250,8 @@ input[type=radio]:checked {
     .palette .panel.gray {
       background-color: #4d4e50; }
     .palette .panel.light-gray {
-      background-color: #e4e6e6; }
+      background-color: #e4e6e6;
+      color: #4d4e50; }
 
 input[type=checkbox] {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.15);
