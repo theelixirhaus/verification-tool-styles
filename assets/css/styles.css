@@ -19,7 +19,6 @@ body *:not(.fa) {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
-  color: #00aeef;
   line-height: 1.75em;
   margin: 0; }
 
@@ -39,16 +38,28 @@ h5 {
   font-size: 1.4rem; }
 
 h6 {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  letter-spacing: 2px; }
 
 .hbr {
   border-bottom: solid thin #c2c2c2;
   width: 100%;
-  margin: 2rem 0; }
+  padding-bottom: 20px;
+  margin: 60px 0 30px; }
 
-p, span, em, strong, b, div {
-  font-size: 1rem;
+img.guide-logo {
+  max-width: 130px;
+  margin-right: 30px; }
+
+.element-spacing {
+  padding: 40px 0; }
+
+p {
+  font-size: 16px;
   font-weight: 300; }
+
+.hero-title {
+  font-size: 50px; }
 
 .title {
   font-size: 30px; }
@@ -59,8 +70,7 @@ p, span, em, strong, b, div {
   font-weight: 200; }
 
 strong {
-  font-weight: 600;
-  color: #4d4e50; }
+  font-weight: 600; }
 
 blockquote {
   border-left: solid 4px #00aeef;
@@ -111,6 +121,9 @@ hr {
 .text-center {
   text-align: center; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 .clear {
   clear: both;
   display: inline-block;
@@ -148,7 +161,8 @@ hr {
       background-color: #373738; }
 
 .button i:before {
-  font-size: .8rem;
+  font-size: 16px;
+  font-weight: bold;
   transform: translate(6px, 0px);
   transition: transform .15s ease-in; }
 .button.move-right:hover i:before {
@@ -196,7 +210,7 @@ input[type=tel] {
   input[type=address]:focus,
   input[type=tel]:focus {
     outline: solid thin rgba(0, 0, 0, 0.2);
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0px 7px 0 rgba(0, 0, 0, 0.15);
     border: solid thin #4d4e50; }
   input[type=password].validate,
   input[type=search].validate,
@@ -205,7 +219,7 @@ input[type=tel] {
   input[type=address].validate,
   input[type=tel].validate {
     border-color: #fc0c0f;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.15); }
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0px 7px 0 rgba(0, 0, 0, 0.15); }
 
 input[type="search"]::placeholder {
   font-family: Ionicons;
@@ -219,6 +233,11 @@ input::placeholder {
 input[type=checkbox] + label,
 input[type=radio] + label {
   display: inline; }
+
+input[type=checkbox]:checked.mute {
+  pointer-events: none; }
+  input[type=checkbox]:checked.mute::before {
+    color: #c2c2c2; }
 
 input[type=radio], input[type=checkbox] {
   -moz-appearance: none;
@@ -320,9 +339,10 @@ input[type="submit"] {
     .accordion .accordion-header:before {
       content: "\f3d3";
       font-family: Ionicons;
-      font-size: 2rem;
       position: absolute;
-      top: 1.25rem;
+      top: 19px;
+      font-size: 20px;
+      font-weight: bold;
       left: 2rem; }
     .accordion .accordion-header:hover {
       cursor: pointer; }
@@ -330,7 +350,16 @@ input[type="submit"] {
         color: #00aeef; }
   .accordion .accordion-content {
     height: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0;
+    list-style-type: none;
+    display: block;
+    padding: 0; }
+    .accordion .accordion-content li {
+      padding: 15px 75px;
+      border-bottom: 1px solid #c2c2c2; }
+      .accordion .accordion-content li:last-child {
+        border-bottom: none; }
   .accordion.open .accordion-header *, .accordion.open .accordion-header:before {
     color: #00aeef;
     content: "\f3d0"; }
@@ -401,13 +430,14 @@ ul.pager {
       float: left; }
 
 .Select-control {
-  border-radius: 0;
-  font-size: 1rem; }
+  border-radius: 0; }
 
 .is-searchable .Select-control, .Select--multi .Select-control {
   height: 2.25rem;
   background-color: #4d4e50 !important;
   border: none; }
+  .is-searchable .Select-control span, .is-searchable .Select-control div, .Select--multi .Select-control span, .Select--multi .Select-control div {
+    font-size: 14px; }
   .is-searchable .Select-control input, .Select--multi .Select-control input {
     color: white; }
 .is-searchable .Select-value-label, .Select--multi .Select-value-label {
@@ -419,8 +449,10 @@ ul.pager {
 .Select-clear-zone {
   display: none; }
 
-.Select-option.is-focused, .Select-option.is-selected {
-  background-color: #e0e0e0; }
+.Select-option {
+  font-size: 14px; }
+  .Select-option.is-focused, .Select-option.is-selected {
+    background-color: #e0e0e0; }
 
 .Select-arrow {
   border: none;

@@ -28,6 +28,9 @@
 </head>
 <body>
 <div class="content">
+  <div class="element-spacing">
+  <h1><img src="img/vericred-logo.png" class="guide-logo"/>Vericred Style <span class="primary">Guide</span></h1>
+</div>
   <!--<h1 class="text-center">Vericred Style Guide</h1>-->
   <h2 class="dark hbr">Logo</h2>
   <div class="logos"><p>
@@ -62,14 +65,15 @@
 
   <div class="purge-u-1">
     <!-- TYPOGRAPHY -->
-    <h1>Headline One</h1>
-    <h2>Headline Two</h2>
-    <h3>Headline Three</h3>
-    <h4>Headline Four</h4>
-    <h5>Headline Five</h5>
-    <h6>Headline Six</h6>
-    <p class="title">Title</p>
-    <p class="hero-tagline">Morbi tincidunt, odio varius vestibulum congue</p>
+    <h1 class="hero-title">h1 (.hero-title)</h1>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H5</h6>
+    <p class="title">Title (.title)</p>
+    <p class="hero-tagline">Tagline (.hero-tagline)</p>
     <p>Proin sodales augue eu ullamcorper feugiat. Morbi tempus tellus non
       imperdiet laoreet. <strong>Vestibulum et porttitor sem</strong>, quis
       imperdiet nisl.
@@ -88,14 +92,18 @@
 
   <!-- Form Components-->
   <h2 class="dark  hbr">Input Elements</h2>
-  <h6 class="primary">CHECKBOXES</h6>
-  <div class="pure-u-1"><br>
+  <h6 class="primary uppercase">Checkboxes</h6>
+  <div class="pure-u-1 element-spacing"><br>
     <input type="checkbox" value="Checkbox" checked id="checkbox"> <label
         for="checkbox">Checkboxes</label>
+    </input><p>
+     <input type="checkbox" class="mute" value="Checkbox" checked id="checkbox"> <label
+        for="checkbox">Checkboxes with .mute class</label>
     </input>
+  </p>
   </div>
-  <div class="pure-u-1 "><br><br>
-    <h6 class="primary">RADIO BUTTONS</h6>
+  <div class="pure-u-1 element-spacing">
+    <h6 class="primary uppercase">Radio Buttons</h6>
     <br>
     <input type="radio" value="Radio Button" checked id="radio" name="radio">
     <label for="radio">Choose me &nbsp;</label>
@@ -104,8 +112,8 @@
     <label for="radio-2">Or choose me!</label>
     </input>
   </div>
-  <div class="pure-u-md-3-5"><br>
-    <h6 class="primary">TEXT INPUT</h6>
+  <div class="pure-u-md-3-5 element-spacing"><br>
+    <h6 class="primary uppercase">Text Input</h6>
     <br>
     <form class="compact">
       <input type="search" placeholder="&#xf4a5;" required
@@ -116,7 +124,7 @@
     </form>
   </div>
   <div class="pure-u-1-1 pure-u-md-3-5">
-    <label for="search-input">SIGN UP</label>
+    <label for="search-input uppercase">Sign Up</label>
     <input type="text" placeholder="Text Input" required
            class="required pure-u-md-13-24 pure-u-1-2"
            id="text-input"/>
@@ -134,12 +142,15 @@
       <input type="submit" value="Submit" class="button"/>
   </div>
 
-<br>
-  <h6 class="primary">DROPDOWNS</h6>
+  <div class="element-spacing">
+  <h6 class="primary uppercase ">Dropdowns</h6>
   <br>
 
   <div id="example" class="pure-u-1-1 pure-u-md-1-3"></div>
-  <br><br>  <!-- BUTTONS -->  <h6 class="primary">Buttons</h6>
+  </div> 
+  <div class="element-spacing">
+    <!-- BUTTONS -->  <h6 class="primary uppercase">Buttons</h6>
+    <br/>
   <div class="pure-g">
     <div class="pure-u-md-1-3">
       <small>Regular Button</small>
@@ -169,47 +180,54 @@
       <p><a class="button dark move-down" href="#">Report a Problem <i
           class="ion-ios-arrow-down"></i></a></p><br>
     </div></div>
+  </div>
 
-  <div class="accordion  hbr">
+  <div class=" hbr">
     <h2 class="dark hbr">Widgets</h2>
-    <br><h6 class="primary">ACCORDION</h6><br>
+     <div class="accordion  element-spacing">
+      <h6 class="primary uppercase">Accordion</h6><br>
     <div class="accordion-header">
       <p>SmartAlliance Gold 2500</p>
     </div>
-    <div class="accordion-content">
-      <p>Opened</p>
-      <p>Opened</p>
-      <p>Opened</p>
-    </div>
+    <ul class="accordion-content">
+      <li>Opened</li>
+      <li>Opened</li>
+      <li>Opened</li>
+    </ul
   </div>
-  <br><h6 class="primary">TABS</h6><br>
-  <ul class="tabs pure-u-1-1">
-    <li class="tab active"><a href="#">RATES</a></li>
-    <li class="tab"><a href="#">BENEFITS</a></li>
-    <li class="tab"><a href="#">EXAMPLE</a></li>
-    <li class="tab"><a href="#">TAB</a></li>
-  </ul>
-  <div class="tab container">
-    <p>Curabitur mattis interdum posuere. Sed pellentesque dapibus eleifend.
-      Sed tristique quis turpis a pharetra. Vestibulum ante ipsum primis in
-      faucibus orci luctus et ultrices posuere cubilia Curae; Donec et quam
-      mattis, consequat orci nec, blandit ligula. Vestibulum ante ipsum primis
-      in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at
-      ipsum eleifend, tempor eros id, accumsan eros. Aliquam vitae congue
-      nisi. Curabitur pretium lectus sed tortor dictum, at hendrerit urna
-      finibus. Duis hendrerit, sapien mollis congue egestas, dolor tortor
-      pulvinar nulla, nec mollis quam nunc in tortor. Vestibulum eget
-      malesuada justo, quis volutpat urna. Nam ac purus risus. Sed malesuada
-      risus sit amet orci elementum imperdiet. Suspendisse id lobortis mauris,
-      vel volutpat tortor. Vestibulum urna sem, vehicula vel massa vel,
-      sodales ullamcorper risus. Aliquam vel orci condimentum, sollicitudin
-      orci sed, pulvinar lectus.</p>
+  </div>
+  
+  <div class="element-spacing">
+
+    <h6 class="primary uppercase">Tabs</h6><br>
+    <ul class="tabs pure-u-1-1">
+      <li class="tab active"><a href="#">RATES</a></li>
+      <li class="tab"><a href="#">BENEFITS</a></li>
+      <li class="tab"><a href="#">EXAMPLE</a></li>
+      <li class="tab"><a href="#">TAB</a></li>
+    </ul>
+    <div class="tab container">
+      <p>Curabitur mattis interdum posuere. Sed pellentesque dapibus eleifend.
+        Sed tristique quis turpis a pharetra. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia Curae; Donec et quam
+        mattis, consequat orci nec, blandit ligula. Vestibulum ante ipsum primis
+        in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at
+        ipsum eleifend, tempor eros id, accumsan eros. Aliquam vitae congue
+        nisi. Curabitur pretium lectus sed tortor dictum, at hendrerit urna
+        finibus. Duis hendrerit, sapien mollis congue egestas, dolor tortor
+        pulvinar nulla, nec mollis quam nunc in tortor. Vestibulum eget
+        malesuada justo, quis volutpat urna. Nam ac purus risus. Sed malesuada
+        risus sit amet orci elementum imperdiet. Suspendisse id lobortis mauris,
+        vel volutpat tortor. Vestibulum urna sem, vehicula vel massa vel,
+        sodales ullamcorper risus. Aliquam vel orci condimentum, sollicitudin
+        orci sed, pulvinar lectus.</p>
+    </div>
   </div>
 
 
   <h2 class="dark hbr">Iconography</h2>
   <p>All icons used on the style guide are provided from <a
-      href="http://ionicons.com" target="_blank">Ionicons.</a>.
+      href="http://ionicons.com" target="_blank">Ionicons</a>.
     You can
     output these icons anywhere by using a base set of code, and changing
     the icons by making one slight modification.

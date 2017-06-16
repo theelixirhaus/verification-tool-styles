@@ -9,7 +9,10 @@ $secondary-color: #e1ae26;
 $tertiary-color: #a4dcf3;
 $black-color: #4d4e50;
 $grey-color: #e4e6e6;
+$grey-light-color:#f5f5f5;
+$grey-norm-color:#c2c2c2;
 $placeholder: #d4d4d4;
+
 
 $alert-color: #fc0c0f;
 $success-color: #cccc;
@@ -21,6 +24,10 @@ $vericred-grey: #4d4e50;
 
 @mixin box-shadow() {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+}
+
+@mixin inner-box-shadow() {
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0px 7px 0 rgba(0, 0, 0, 0.15);
 }
 
 @mixin border-radius() {
@@ -51,7 +58,6 @@ body *:not(.fa) {
 //TYPE SETTINGS
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
-  color: $primary-color;
   line-height: 1.75em;
   margin: 0;
 
@@ -79,18 +85,35 @@ h5 {
 
 h6 {
   font-size: 1.2rem;
+  letter-spacing: 2px;
 }
 
 .hbr {
-  border-bottom: solid thin #c2c2c2;
+  border-bottom: solid thin $grey-norm-color;
   width: 100%;
-  margin: 2rem 0;
+  padding-bottom: 20px;
+  margin: 60px 0 30px;
 }
 
-p, span, em, strong, b, div {
-  font-size: 1rem;
+img.guide-logo {
+    max-width: 130px;
+    margin-right: 30px;
+}
+
+.element-spacing{
+  padding: 40px 0;
+}
+
+p {
+  font-size: 16px;
   font-weight: 300;
 }
+
+.hero-title {
+  font-size: 50px;
+}
+
+
 
 .title {
   font-size: 30px;
@@ -104,7 +127,6 @@ p, span, em, strong, b, div {
 
 strong {
   font-weight: 600;
-  color: $black-color;
 }
 
 blockquote {
@@ -173,6 +195,10 @@ hr {
   text-align: center;
 }
 
+.uppercase{
+  text-transform: uppercase
+}
+
 .clear {
   clear: both;
   display: inline-block;
@@ -235,7 +261,8 @@ hr {
 
 .button {
   i:before {
-    font-size: .8rem;
+    font-size: 16px;
+    font-weight: bold;
     transform: translate(6px, 0px);
     transition: transform .15s ease-in;
 
@@ -296,13 +323,13 @@ input[type=tel] {
 
   &:focus {
     outline: solid thin rgba(0, 0, 0, .2);
-    @include box-shadow();
+    @include inner-box-shadow();
     border: solid thin $black-color;
   }
 
   &.validate {
     border-color: $alert-color;
-    @include box-shadow();
+    @include inner-box-shadow();
   }
 }
 
@@ -323,7 +350,12 @@ input[type=radio] + label {
   display: inline;
 
 }
-
+input[type=checkbox]:checked.mute{
+  pointer-events:none;
+  &::before{
+        color: $grey-norm-color;
+  }
+}
 input[type=radio], input[type=checkbox] {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -466,14 +498,16 @@ input[type="submit"] {
   .accordion-header {
     display: block;
     padding: .25rem 1.5rem .25rem 4.5rem;
-    background-color: #f5f5f5;
+    background-color: $grey-light-color;
     position: relative;
     &:before {
       content: "\f3d3";
       font-family: Ionicons;
-      font-size: 2rem;
+
       position: absolute;
-      top: 1.25rem;
+      top: 19px;
+      font-size: 20px;
+      font-weight: bold;
       left: 2rem;
     }
 
@@ -483,11 +517,28 @@ input[type="submit"] {
         color: $primary-color;
       }
     }
+
+
   }
   .accordion-content {
     height: 0;
     overflow: hidden;
+    margin:0;
+    list-style-type: none;
+    display:block;
+    padding:0;
+    
+    li{
+      padding:15px 75px;
+      border-bottom: 1px solid $grey-norm-color; 
+      &:last-child{
+        border-bottom: none;
+        
+      }
+    }
   }
+
+
   &.open .accordion-header {
     *, &:before {
       color: $primary-color;
@@ -550,7 +601,7 @@ table {
     padding-left: 2rem;
   }
   tbody tr:nth-child(odd) {
-    background-color: #f5f5f5;
+    background-color: $grey-light-color;
   }
 
 }
@@ -601,15 +652,23 @@ ul.pager {
 //React Select Dropdowns
 .Select-control {
   border-radius: 0;
-  font-size:1rem;
+
+ 
+
+
 }
+
+
 
 .is-searchable, .Select--multi {
   .Select-control {
     height: 2.25rem;
     background-color: $black-color !important;
     border: none;
-
+    span,div{
+      font-size:14px;
+    }
+  
     input {
       color: white;
     }
@@ -629,8 +688,10 @@ ul.pager {
 }
 
 .Select-option {
+   font-size:14px;
   &.is-focused, &.is-selected {
     background-color: #e0e0e0;
+      
   }
 }
 
