@@ -60,9 +60,9 @@ var _componentsStates2 = _interopRequireDefault(_componentsStates);
 _reactDom2['default'].render(_react2['default'].createElement(
 	'div',
 	null,
-	_react2['default'].createElement(_componentsStates2['default'], { label: 'Simple Dropdown', searchable:false }),
-	_react2['default'].createElement(_componentsStates2['default'], { label: 'Dropdown with Autocomplete' }),
-	_react2['default'].createElement(_componentsMultiselect2['default'], { label: 'React Multiselect Dropdown' })
+	_react2['default'].createElement(_componentsStates2['default'], { label: '', searchable:false }),
+	_react2['default'].createElement(_componentsStates2['default'], { label: '' }),
+	_react2['default'].createElement(_componentsMultiselect2['default'], { label: '' })
 	// _react2['default'].createElement(_componentsVirtualized2['default'], { label: 'Virtualized' }),
 	// _react2['default'].createElement(_componentsContributors2['default'], { label: 'Contributors (Async)' }),
 	// _react2['default'].createElement(_componentsGithubUsers2['default'], { label: 'Github users (Async with fetch.js)' }),
