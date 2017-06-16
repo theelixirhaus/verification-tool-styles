@@ -88,7 +88,7 @@ h6 {
 }
 
 p, span, em, strong, b, div {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -302,6 +302,7 @@ input[type=tel] {
 
   &.validate {
     border-color: $alert-color;
+    @include box-shadow();
   }
 }
 
@@ -503,8 +504,9 @@ input[type="submit"] {
 //Tabs
 ul.tabs {
   margin: 2rem 0 0;
-  padding: 0;
+  padding: 0 0 0 3rem;
   list-style: none;
+  border-bottom:solid thin $grey-color;
   li.tab {
     @media only screen and (min-width: 768px) {
       display: inline;
@@ -513,16 +515,17 @@ ul.tabs {
     }
     a {
       border: solid thin $grey-color;
+
       font-weight: 300;
       padding: .5rem 1.5rem;
       display: block;
       @media only screen and (min-width: 768px) {
-        border-width: 1px 0 1px 1px;
+        border-width: 1px 0 0 1px;
       }
     }
 
     &:last-child a {
-      border-width: 1px;
+      border-width:1px 1px 0 1px;
     }
   }
 
@@ -598,6 +601,7 @@ ul.pager {
 //React Select Dropdowns
 .Select-control {
   border-radius: 0;
+  font-size:1rem;
 }
 
 .is-searchable, .Select--multi {
