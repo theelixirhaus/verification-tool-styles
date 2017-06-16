@@ -13,7 +13,7 @@
         href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
   <link rel="stylesheet"
         href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet"
         href="https://unpkg.com/react-select/dist/react-select.css">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -29,13 +29,13 @@
 <body>
 <div class="content">
   <div class="element-spacing">
-  <h1><img src="img/vericred-logo.png" class="guide-logo"/>Vericred Style <span class="primary">Guide</span></h1>
+  <h1><img src="img/vericred-logo.png" class="guide-logo" alt="Vericred"/>Vericred Style <span class="primary">Guide</span></h1>
 </div>
   <!--<h1 class="text-center">Vericred Style Guide</h1>-->
   <h2 class="dark hbr">Logo</h2>
   <div class="logos"><p>
-    <a href="#"><img src="img/vericred-logo.png"/></a>
-    <a href="#"><img src="img/vericred-logo-blue.png"/></a></p><br></div>
+    <a href="#"><img src="img/vericred-logo.png" alt="Vericred Reg"/></a>
+    <a href="#"><img src="img/vericred-logo-blue.png" alt="Vericred Blue"/></a></p><br></div>
 
   <!-- Begin the branded box with the mutli-color border -->
   <h2 class="dark hbr">Color Palette</h2>
@@ -97,7 +97,7 @@
     <input type="checkbox" value="Checkbox" checked id="checkbox"> <label
         for="checkbox">Checkboxes</label>
     </input><p>
-     <input type="checkbox" class="mute" value="Checkbox" checked id="checkbox"> <label
+     <input type="checkbox" class="mute" value="Checkbox" checked id="checkbox-mute"> <label
         for="checkbox">Checkboxes with .mute class</label>
     </input>
   </p>
@@ -124,7 +124,7 @@
     </form>
   </div>
   <div class="pure-u-1-1 pure-u-md-3-5">
-    <label for="search-input uppercase">Sign Up</label>
+    <label for="text-input uppercase">Sign Up</label>
     <input type="text" placeholder="Text Input" required
            class="required pure-u-md-13-24 pure-u-1-2"
            id="text-input"/>
@@ -330,7 +330,6 @@
 </div>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-<script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
   document.getElementById('github-stars-button').dataset.style = window.innerWidth > 480 ? 'mega' : null;
