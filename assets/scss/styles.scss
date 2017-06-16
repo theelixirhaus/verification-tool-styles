@@ -658,7 +658,10 @@ ul.pager {
 
 }
 
-
+.Select-value-label {
+    font-size:14px
+  
+  }
 
 .is-searchable, .Select--multi {
   .Select-control {
@@ -675,6 +678,7 @@ ul.pager {
   }
   .Select-value-label {
     color: white !important;
+
   }
   .Select-arrow:before {
     color: white;
@@ -694,13 +698,17 @@ ul.pager {
       
   }
 }
+.is-focused .Select-arrow-zone {
+  padding: 4px 5px 0;
+  
+}
 
 .Select-arrow {
   border: none;
   position: relative;
   width: 35px;
   &:before {
-    padding: 1rem;
+    padding:22px 15px 10px;
     content: "\f3d0";
     color: white;
     background-color: #e0e0e0;

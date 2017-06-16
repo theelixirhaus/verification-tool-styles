@@ -432,6 +432,9 @@ ul.pager {
 .Select-control {
   border-radius: 0; }
 
+.Select-value-label {
+  font-size: 14px; }
+
 .is-searchable .Select-control, .Select--multi .Select-control {
   height: 2.25rem;
   background-color: #4d4e50 !important;
@@ -454,12 +457,15 @@ ul.pager {
   .Select-option.is-focused, .Select-option.is-selected {
     background-color: #e0e0e0; }
 
+.is-focused .Select-arrow-zone {
+  padding: 4px 5px 0; }
+
 .Select-arrow {
   border: none;
   position: relative;
   width: 35px; }
   .Select-arrow:before {
-    padding: 1rem;
+    padding: 22px 15px 10px;
     content: "\f3d0";
     color: white;
     background-color: #e0e0e0;
