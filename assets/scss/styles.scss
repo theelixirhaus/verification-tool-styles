@@ -318,7 +318,6 @@ input[type=tel] {
   @include border-radius();
   height: 2.9rem;
   padding: 0 .75rem;
-  border-radius: 6px;
   border: solid thin $grey-color;
 
   &:focus {

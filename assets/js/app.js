@@ -1028,10 +1028,10 @@ var StatesField = (0, _createReactClass2['default'])({
 	},
 	getInitialState: function getInitialState() {
 		return {
-			country: 'AU',
+			country: 'US',
 			disabled: false,
 			searchable: this.props.searchable,
-			selectValue: 'new-south-wales',
+			selectValue: 'NY',
 			clearable: true
 		};
 	},

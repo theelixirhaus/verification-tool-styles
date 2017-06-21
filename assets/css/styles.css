@@ -201,7 +201,6 @@ input[type=tel] {
   border-radius: 0;
   height: 2.9rem;
   padding: 0 .75rem;
-  border-radius: 6px;
   border: solid thin #e4e6e6; }
   input[type=password]:focus,
   input[type=search]:focus,
